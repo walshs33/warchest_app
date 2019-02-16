@@ -4,6 +4,8 @@ import * as Nav from 'react-navigation';
 import firebase from 'react-native-firebase';
 
 import Main from './src/Main';
+import Login from './src/Login';
+import Signup from './src/Signup';
 
 const mainNav = Nav.createDrawerNavigator(
   {
@@ -31,7 +33,21 @@ const appNav = Nav.createStackNavigator(
             style={{height:40, width:80}}
           />
         ),
+        headerRight: (
+          <Icon
+            name={firebase.auth().currentUser == null ? "account-alert" : "account"}
+            type='material-community'
+            iconStyle={{marginRight: 15}}
+            onPress={() => navigation.navigate('Login')}
+          />
+        ),
       })
+    },
+    Login: {
+      screen: Login
+    },
+    Signup: {
+      screen: Signup
     }
   },
   {
