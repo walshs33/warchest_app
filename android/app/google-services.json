@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "157796549283",
+    "firebase_url": "https://homunculus-db9a1.firebaseio.com",
+    "project_id": "homunculus-db9a1",
+    "storage_bucket": "homunculus-db9a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157796549283:android:fe6baad8adf232b3",
+        "android_client_info": {
+          "package_name": "com.homunculus.homunculus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157796549283-6mdhhjavni9r09o665ch4k48j5m6s80l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnk0s36DWwPUdv6fxJntTVJz_8gEGpt6M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157796549283:android:f57150479412b53e",
+        "android_client_info": {
+          "package_name": "com.homunculus.warchest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157796549283-6mdhhjavni9r09o665ch4k48j5m6s80l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnk0s36DWwPUdv6fxJntTVJz_8gEGpt6M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
