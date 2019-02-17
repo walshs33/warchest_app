@@ -6,11 +6,23 @@ import firebase from 'react-native-firebase';
 import Main from './src/Main';
 import Login from './src/Login';
 import Signup from './src/Signup';
+import Mtg from './src/Mtg';
+import Ygo from './src/Ygo';
+import Pkm from './src/Pkm';
 
 const mainNav = Nav.createDrawerNavigator(
   {
     Main: {
       screen: Main
+    },
+    Mtg: {
+      screen: Mtg
+    },
+    Ygo: {
+      screen: Ygo
+    },
+    Pkm: {
+      screen: Pkm
     }
   }
 );

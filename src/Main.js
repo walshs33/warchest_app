@@ -21,30 +21,44 @@ export default class Main extends React.Component {
   render() {
     return(
       <View style={{flex: 1, alignItems: 'center'}}>
-        <View style={{backgroundColor: 'red', width: width, alignItems: 'center'}}>
-          <Image
-            source={require('../assets/logos/mtglogo.jpg')}
-            style={{height: 60, width: width / 2, margin: 10}}
-          />
-        </View>
-        <View style={{backgroundColor: 'blue', width: width, alignItems: 'center'}}>
-          <Image
-            source={require('../assets/logos/yugiohlogo.jpg')}
-            style={{height: 60, width: width / 2, margin: 10}}
-          />
-        </View>
-        <View style={{backgroundColor: 'red', width: width, alignItems: 'center'}}>
-          <Image
-            source={require('../assets/logos/pokemonlogo.png')}
-            style={{height: 60, width: width / 3, margin: 10}}
-          />
-        </View>
-        <View style={{backgroundColor: 'blue', width: width, alignItems: 'center'}}>
-          <Image
-            source={require('../assets/logos/mtglogo.jpg')}
-            style={{height: 60, width: width / 2, margin: 10}}
-          />
-        </View>
+        <TouchableNativeFeedback
+          onPress={() => this.props.navigation.navigate('Mtg')}
+        >
+          <View style={{flex: 1, borderColor: 'whitesmoke', borderWidth: 1, justifyContent: 'center', width: width, alignItems: 'center'}}>
+            <Image
+              source={require('../assets/logos/mtglogo.jpg')}
+              style={{height: 60, width: width / 2, margin: 10}}
+            />
+          </View>
+        </TouchableNativeFeedback>
+        <TouchableNativeFeedback
+          onPress={() => this.props.navigation.navigate('Ygo')}
+        >
+          <View style={{flex: 1, borderColor: 'whitesmoke', borderWidth: 1, justifyContent: 'center', width: width, alignItems: 'center'}}>
+            <Image
+              source={require('../assets/logos/yugiohlogo.jpg')}
+              style={{height: 60, width: width / 2, margin: 10}}
+            />
+          </View>
+        </TouchableNativeFeedback>
+        <TouchableNativeFeedback
+          onPress={() => this.props.navigation.navigate('Pkm')}
+        >
+          <View style={{flex: 1, borderColor: 'whitesmoke', borderWidth: 1, justifyContent: 'center', width: width, alignItems: 'center'}}>
+            <Image
+              source={require('../assets/logos/pokemonlogo.png')}
+              style={{height: 60, width: width / 3, margin: 10}}
+            />
+          </View>
+        </TouchableNativeFeedback>
+        <TouchableNativeFeedback>
+          <View style={{flex: 1, borderColor: 'whitesmoke', borderWidth: 1, justifyContent: 'center', width: width, alignItems: 'center'}}>
+            <Image
+              source={require('../assets/logos/mtglogo.jpg')}
+              style={{height: 60, width: width / 2, margin: 10}}
+            />
+          </View>
+      </TouchableNativeFeedback>
       </View>
     )
   }
